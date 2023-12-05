@@ -1,4 +1,4 @@
-# learning-go
+# learnGoWithTests
 
 Learning test-driven development with Go
 
