@@ -34,8 +34,8 @@ func (w *Wallet) Withdraw(amount Bitcoin) error {
 
 	if amount > w.balance {
 		out = ErrInsufficientFunds
+	} else {
+		w.balance -= amount
 	}
-
-	w.balance -= amount
 	return out
 }
